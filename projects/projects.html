@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projects-style.css"/>
+    <script src="https://kit.fontawesome.com/f0ae355e22.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <title>JA Code</title>
+</head>
+<body>
+    <!-- This this tabs for the code editor website, this is the header  -->
+    <nav class="navbar">
+        <div class="left">
+            <img class="code-logo" src="ja-code.png">
+            <li class="nav-element">Welcome</li>
+            <li class="nav-element">To</li>
+            <li class="nav-element">Jonathan Alcineus'</li>
+            <li class="nav-element">Portfolio</li>
+        </div>
+        <div class="right" onClick="closeWindow()">
+            <i class="fa-solid fa-x"></i>
+        </div>
+    </nav>
+
+    <!-- This is the first sidebar with all of the social media, and contact links for the portfolio-->
+    <nav class="sidebar-icons">
+        <li><a onclick="openGitHub()"><i class="fa-brands fa-github fa-2x"></i></a></li>
+        <li><a onclick="openLinkedIn()"><i class="fa-brands fa-linkedin fa-2x"></i></a></li>
+        <li><a onclick ="openGmail()"><i class="fa-regular fa-envelope fa-2x"></i></a></li>
+    </nav>
+    
+    <!-- This is the second sidebar with all of the parts of the website (files) for the portfolio-->
+    <nav class="files">
+        <div class="file-top">
+            <p id="file-name">FILES</p>
+            <i class="fa-solid fa-ellipsis"></i>
+        </div>
+        <div class="portfolio-files">
+            <p id="folder-name"><i class="fa-solid fa-chevron-down"></i>    PORTFOLIO</p>
+            <div class="file-tabs">
+                <li id="home-file"><a href="/index.html">home.js</a</li>
+                <li id="aboutme-file"><a href="/aboutme/aboutme.html">aboutme.css</a</li>
+                <li id="projects-file"><a href="/projects/projects.html">projects.html</a></li>
+                <li id="experience-file"><a href="/experience/experience.html">experience.css</a></li>
+                <li id="honors-file"><a href="/honors/honors.html">honors.html</a></li>
+                <li onclick="openResume()">resume.html</li>
+            </div>
+        </div>
+    </nav>
+
+    <!--This going to to the place where all of the cool content happens, editable files for the pages-->
+    <!--This also the part that is going to change for each file-->
+    <div class="individual-area"> 
+        <nav class="files-tab-content">
+            <ul class="tabs">
+                <li id="home"><a href="/index.html">home.js</a></li>
+                <li id="aboutme"><a href="/aboutme/aboutme.html">aboutme.css</a></li>
+                <li id="projects"><a href="/projects/projects.html">projects.html</a></li>
+                <li id="experience"><a href="/experience/experience.html">experience.css</a></li>
+                <li id="honors"><a href="/honors/honors.html">honors.html</a></li>
+                <li id="resume" onclick="openResume()">resume.html</li>
+            </ul>
+        </nav>
+
+        <ol class="code" contenteditable="true">
+            <li>//Coming Soon</li>
+        </ol>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
